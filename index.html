@@ -1,0 +1,1200 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Tổng hợp kiến thức giai đoạn 1 – Fit‑Lab Spring 2026</title><style>
+:root {
+	--bg: #f7f8fb;
+	--surface: #ffffff;
+	--text: #22252b;
+	--muted: #5f6673;
+	--line: rgba(34, 37, 43, 0.10);
+	--line-strong: rgba(34, 37, 43, 0.16);
+	--accent: #2f6feb;
+	--shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+html {
+	-webkit-print-color-adjust: exact;
+	background: var(--bg);
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, Arial, sans-serif;
+	line-height: 1.85;
+	letter-spacing: 0.01em;
+	color: var(--text);
+	background: linear-gradient(180deg, #f6f8fc 0%, #eef3fb 100%);
+	white-space: normal;
+}
+
+@media only screen {
+	body {
+		margin: 0;
+		padding: 40px 20px 72px;
+	}
+	.article.page {
+		max-width: 980px;
+		margin: 0 auto;
+		background: var(--surface);
+		border: 1px solid rgba(255,255,255,0.75);
+		border-radius: 28px;
+		box-shadow: var(--shadow);
+		overflow: hidden;
+	}
+}
+
+a,
+a.visited {
+	color: var(--accent);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 260px;
+	max-height: none;
+	filter: saturate(1.02);
+}
+
+header {
+	padding-bottom: 12px;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 24%);
+}
+
+.page-title,
+.page-description,
+.page-body {
+	padding-left: 64px;
+	padding-right: 64px;
+}
+
+.page-title {
+	font-size: clamp(2.2rem, 4vw, 3.15rem);
+	line-height: 1.18;
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	margin-top: 34px;
+	margin-bottom: 18px;
+	text-wrap: balance;
+}
+
+.page-description {
+	margin-bottom: 0;
+}
+
+.page-body {
+	padding-top: 8px;
+	padding-bottom: 72px;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.02em;
+	line-height: 1.3;
+	font-weight: 750;
+	color: #141821;
+	margin-bottom: 0.7rem;
+}
+
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: inherit;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-top: 3.2rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.35rem;
+	border-bottom: 1px solid var(--line);
+}
+
+h2 {
+	font-size: 1.55rem;
+	margin-top: 2.5rem;
+}
+
+h3 {
+	font-size: 1.18rem;
+	margin-top: 1.7rem;
+	color: #1e2430;
+}
+
+p {
+	margin-top: 0.95em;
+	margin-bottom: 0.95em;
+	font-size: 1.03rem;
+	color: #27303b;
+}
+
+strong {
+	color: #131722;
+}
+
+ul, ol {
+	margin-block-start: 0.9em;
+	margin-block-end: 1.1em;
+}
+
+ul {
+	padding-inline-start: 1.45em;
+}
+
+ol {
+	padding-inline-start: 1.55em;
+}
+
+li {
+	margin: 0.45em 0;
+	padding-left: 0.28em;
+}
+
+li > p {
+	margin: 0.35em 0;
+}
+
+ul > li::marker,
+ol > li::marker {
+	color: #667085;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid var(--line);
+	margin: 2rem 0;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1.4em 0;
+	padding: 0.9em 1.2em;
+	border-left: 4px solid #b6c6f8;
+	background: #f7faff;
+	border-radius: 0 14px 14px 0;
+}
+
+figure {
+	margin: 2em 0 2.3em;
+	page-break-inside: avoid;
+}
+
+.image {
+	margin: 2em 0 2.4em;
+	padding: 0;
+	text-align: center;
+}
+
+.image img,
+figure img,
+img {
+	max-width: 100%;
+	border-radius: 18px;
+	box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+figcaption {
+	opacity: 0.7;
+	font-size: 0.9rem;
+	margin-top: 0.8em;
+	color: var(--muted);
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+	margin: 1.2rem 0 1.8rem;
+}
+
+.simple-table,
+table {
+	width: 100%;
+	margin-top: 1.2em;
+	font-size: 0.96rem;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid var(--line-strong);
+	border-radius: 16px;
+	overflow: hidden;
+	background: #fff;
+}
+
+table,
+th,
+td {
+	border: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.9em 1em;
+	line-height: 1.7;
+	min-height: 1.5em;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid var(--line);
+}
+
+tr:last-child td {
+	border-bottom: none;
+}
+
+th,
+.simple-table-header,
+.simple-table tr:first-child td {
+	background: #f6f8fc;
+	font-weight: 650;
+	color: #1d2430;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.12);
+	border-radius: 8px;
+	padding: 0.22em 0.5em;
+	font-size: 0.88em;
+}
+
+.code {
+	padding: 1.3em 1.1em;
+	border: 1px solid var(--line);
+}
+
+.equation {
+	margin: 1.5rem 0;
+}
+
+.equation-container {
+	overflow-x: auto;
+	padding: 1rem 1.2rem;
+	background: #fbfcfe;
+	border: 1px solid var(--line);
+	border-radius: 16px;
+}
+
+.callout {
+	border-radius: 16px;
+	padding: 1rem 1.15rem;
+	background: #f7faff;
+	border: 1px solid #d9e5ff;
+}
+
+.source {
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	padding: 1.25em;
+	word-break: break-word;
+}
+
+@media (max-width: 900px) {
+	.page-title,
+	.page-description,
+	.page-body {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.page-title {
+		margin-top: 24px;
+	}
+	.page-cover-image {
+		height: 200px;
+	}
+	body {
+		line-height: 1.75;
+	}
+}
+
+@media only print {
+	html, body {
+		background: #fff;
+	}
+	body {
+		line-height: 1.55;
+		color: #000;
+	}
+	.article.page {
+		box-shadow: none;
+		border: none;
+	}
+	.page-title,
+	.page-description,
+	.page-body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.page-cover-image {
+		max-height: 30vh;
+		height: auto;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+		box-shadow: none;
+	}
+	.simple-table,
+	table {
+		border: 1px solid #ddd;
+		border-radius: 0;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+/* ================= FIT-LAB PRO READER UI: TOC + PROGRESS + MOBILE ================= */
+:root {
+	--toc-width: 300px;
+	--toc-bg: rgba(255, 255, 255, 0.88);
+	--toc-blur: blur(18px);
+	--toc-border: rgba(15, 23, 42, 0.10);
+	--toc-active-bg: rgba(47, 111, 235, 0.10);
+	--toc-active-line: #2f6feb;
+	--toc-text: #475467;
+	--toc-text-strong: #101828;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+.fitlab-progress {
+	position: fixed; top: 0; left: 0; z-index: 1000;
+	width: 100%; height: 4px; background: transparent;
+}
+.fitlab-progress__bar {
+	display: block; height: 100%; width: 0%;
+	background: linear-gradient(90deg, #2f6feb, #8b5cf6, #06b6d4);
+	box-shadow: 0 0 18px rgba(47, 111, 235, 0.32);
+	transition: width 0.08s linear;
+}
+
+.fitlab-toc {
+	position: fixed; top: 72px; left: max(24px, calc((100vw - 1560px) / 2));
+	z-index: 900; width: var(--toc-width); max-height: calc(100vh - 112px);
+	padding: 16px; background: var(--toc-bg);
+	-webkit-backdrop-filter: var(--toc-blur); backdrop-filter: var(--toc-blur);
+	border: 1px solid var(--toc-border); border-radius: 22px;
+	box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12); overflow: hidden;
+}
+.fitlab-toc__header { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; padding: 0 2px; }
+.fitlab-toc__title { font-size: 0.95rem; font-weight: 750; letter-spacing: -0.01em; color: var(--toc-text-strong); }
+.fitlab-toc__count { font-size: 0.72rem; font-weight: 700; color: #667085; padding: 3px 8px; border-radius: 999px; background: rgba(102, 112, 133, 0.10); }
+.fitlab-toc__search {
+	width: 100%; height: 38px; margin: 4px 0 12px; padding: 0 12px;
+	border: 1px solid rgba(15, 23, 42, 0.10); border-radius: 12px; outline: none;
+	background: rgba(255, 255, 255, 0.72); color: #1f2937; font-size: 0.86rem;
+}
+.fitlab-toc__search:focus { border-color: rgba(47, 111, 235, 0.46); box-shadow: 0 0 0 4px rgba(47, 111, 235, 0.10); }
+.fitlab-toc__list { max-height: calc(100vh - 230px); overflow-y: auto; padding: 2px 4px 2px 0; margin: 0; list-style: none; scrollbar-width: thin; scrollbar-color: rgba(102,112,133,0.35) transparent; }
+.fitlab-toc__list::-webkit-scrollbar { width: 8px; }
+.fitlab-toc__list::-webkit-scrollbar-thumb { background: rgba(102,112,133,0.35); border-radius: 999px; }
+.fitlab-toc__item { margin: 2px 0; padding: 0; }
+.fitlab-toc__link {
+	display: block; position: relative; padding: 8px 10px 8px 12px; border-radius: 12px;
+	color: var(--toc-text); font-size: 0.86rem; line-height: 1.42; text-decoration: none;
+	transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease; white-space: normal;
+}
+.fitlab-toc__link:hover { background: rgba(15, 23, 42, 0.055); color: var(--toc-text-strong); text-decoration: none; }
+.fitlab-toc__link.is-active { background: var(--toc-active-bg); color: #174ea6; font-weight: 700; }
+.fitlab-toc__link.is-active::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 3px; border-radius: 999px; background: var(--toc-active-line); }
+.fitlab-toc__link[data-level="H1"] { font-weight: 750; color: #344054; }
+.fitlab-toc__link[data-level="H2"] { padding-left: 22px; font-size: 0.84rem; }
+.fitlab-toc__link[data-level="H3"] { padding-left: 36px; font-size: 0.80rem; color: #667085; }
+.fitlab-toc__empty { display: none; padding: 12px 8px; font-size: 0.84rem; color: #667085; }
+
+
+/* =========================================================
+   FITLAB TOC UPGRADE: làm nổi bật đầu mục lớn trong mục lục
+   - H1: đậm nhất, nền nhẹ, đóng vai trò nhóm/chương lớn
+   - H2: đậm vừa, màu tối, dễ nhìn hơn
+   - H3: nhẹ hơn, đúng vai trò mục con
+   ========================================================= */
+.fitlab-toc__link[data-level="H1"] {
+	font-weight: 850;
+	color: #111827;
+	font-size: 0.96rem;
+	letter-spacing: -0.01em;
+	margin-top: 10px;
+	margin-bottom: 6px;
+	padding: 10px 12px;
+	background: #f8fafc;
+	border: 1px solid rgba(148, 163, 184, 0.22);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.75);
+}
+
+.fitlab-toc__link[data-level="H2"] {
+	font-weight: 750;
+	color: #1f2937;
+	font-size: 0.90rem;
+	padding-left: 22px;
+	margin-top: 5px;
+}
+
+.fitlab-toc__link[data-level="H3"] {
+	font-weight: 500;
+	color: #64748b;
+	font-size: 0.82rem;
+	padding-left: 38px;
+}
+
+.fitlab-toc__link[data-level="H1"]::after {
+	content: "";
+	position: absolute;
+	left: 12px;
+	right: 12px;
+	bottom: -5px;
+	height: 1px;
+	background: linear-gradient(90deg, rgba(148,163,184,0.30), rgba(148,163,184,0));
+}
+
+.fitlab-toc__link[data-level="H1"]:hover,
+.fitlab-toc__link[data-level="H2"]:hover {
+	color: #1d4ed8;
+	background: #f1f5ff;
+}
+
+.fitlab-toc__link[data-level="H1"].is-active,
+.fitlab-toc__link[data-level="H2"].is-active {
+	font-weight: 850;
+	color: #1d4ed8;
+	background: #eef4ff;
+}
+
+.fitlab-toc__link[data-level="H3"].is-active {
+	font-weight: 700;
+	color: #3157b7;
+	background: #f3f7ff;
+}
+
+.fitlab-mobile-toc-btn, .fitlab-backtop {
+	position: fixed; z-index: 950; border: 1px solid rgba(15, 23, 42, 0.10);
+	background: rgba(255,255,255,0.90); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+	box-shadow: 0 16px 40px rgba(15, 23, 42, 0.16); cursor: pointer;
+	transition: transform 0.18s ease, opacity 0.18s ease;
+}
+.fitlab-mobile-toc-btn { left: 18px; bottom: 18px; display: none; padding: 11px 14px; border-radius: 999px; font-weight: 750; color: #1d2939; }
+.fitlab-backtop { right: 22px; bottom: 22px; width: 46px; height: 46px; border-radius: 50%; font-size: 1.15rem; color: #1d2939; opacity: 0; pointer-events: none; }
+.fitlab-backtop.is-visible { opacity: 1; pointer-events: auto; }
+.fitlab-mobile-toc-btn:hover, .fitlab-backtop:hover { transform: translateY(-2px); }
+
+.fitlab-keytakeaways {
+	margin: 28px 64px 8px; padding: 20px 22px; border-radius: 22px;
+	border: 1px solid rgba(47, 111, 235, 0.16);
+	background: linear-gradient(135deg, rgba(47, 111, 235, 0.075), rgba(139, 92, 246, 0.070));
+	box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+.fitlab-keytakeaways__title { margin: 0 0 10px; font-size: 1.05rem; font-weight: 800; color: #172554; }
+.fitlab-keytakeaways ul { margin: 0; padding-left: 1.2rem; }
+.fitlab-keytakeaways li { margin: 0.35rem 0; line-height: 1.65; color: #263548; }
+
+.fitlab-note { margin: 1.2rem 0; padding: 1rem 1.1rem; border-radius: 16px; border: 1px solid rgba(47, 111, 235, 0.16); background: #f7faff; }
+.fitlab-note strong:first-child { color: #174ea6; }
+
+@media only screen and (min-width: 1320px) { body { padding-left: calc(var(--toc-width) + 52px); } }
+@media (max-width: 1319px) {
+	.fitlab-mobile-toc-btn { display: inline-flex; align-items: center; gap: 8px; }
+	.fitlab-toc { left: 18px; top: auto; bottom: 76px; width: min(340px, calc(100vw - 36px)); max-height: min(620px, calc(100vh - 120px)); transform: translateY(18px) scale(0.98); opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease; }
+	.fitlab-toc.is-open { opacity: 1; pointer-events: auto; transform: translateY(0) scale(1); }
+	.fitlab-toc__list { max-height: min(450px, calc(100vh - 260px)); }
+}
+@media (max-width: 900px) {
+	.fitlab-keytakeaways { margin-left: 24px; margin-right: 24px; padding: 17px 18px; }
+	.fitlab-backtop { right: 18px; bottom: 76px; }
+}
+@media only print { .fitlab-progress, .fitlab-toc, .fitlab-mobile-toc-btn, .fitlab-backtop, .fitlab-keytakeaways { display: none !important; } }
+/* ================= END FIT-LAB PRO READER UI ================= */
+
+
+/* =========================================================
+   FITLAB TOC COMPACT CHAPTER MAP
+   - Chỉ giữ đầu mục lớn trong mục lục
+   - Mục nhỏ được biểu diễn dạng nhánh bằng tiêu đề: ├ Tên mục, ├ Tên mục...
+   ========================================================= */
+
+.fitlab-toc {
+	width: 330px;
+	padding: 18px;
+	border-radius: 24px;
+}
+
+.fitlab-toc__title {
+	font-size: 1rem;
+	font-weight: 850;
+}
+
+.fitlab-toc__count {
+	font-size: 0.72rem;
+	font-weight: 800;
+	background: #eef2ff;
+	color: #475569;
+}
+
+.fitlab-toc__list {
+	max-height: calc(100vh - 230px);
+	padding: 4px 3px 8px 0;
+}
+
+.fitlab-toc__item {
+	margin: 0;
+	padding: 0;
+}
+
+.fitlab-toc__item--chapter {
+	position: relative;
+	margin: 8px 0 12px;
+}
+
+.fitlab-toc__link {
+	display: flex;
+	align-items: flex-start;
+	gap: 11px;
+	position: relative;
+	padding: 11px 12px;
+	border-radius: 16px;
+	color: #111827;
+	background: rgba(255,255,255,0.48);
+	border: 1px solid transparent;
+	text-decoration: none;
+	line-height: 1.35;
+	transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.fitlab-toc__link:hover {
+	background: #f8fbff;
+	border-color: rgba(47, 111, 235, 0.14);
+	box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+	text-decoration: none;
+	transform: translateX(2px);
+}
+
+.fitlab-toc__roman {
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 13px;
+	background: linear-gradient(180deg, #eef4ff, #f8fbff);
+	color: #1d4ed8;
+	font-size: 0.76rem;
+	font-weight: 900;
+	letter-spacing: 0.02em;
+	border: 1px solid rgba(47, 111, 235, 0.12);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.fitlab-toc__main {
+	min-width: 0;
+	flex: 1;
+}
+
+.fitlab-toc__main-title {
+	display: block;
+	font-size: 0.91rem;
+	font-weight: 850;
+	color: #182230;
+	letter-spacing: -0.015em;
+}
+
+.fitlab-toc__main-meta {
+	display: block;
+	margin-top: 4px;
+	font-size: 0.72rem;
+	font-weight: 700;
+	color: #64748b;
+}
+
+.fitlab-toc__link.is-active,
+.fitlab-toc__item--chapter.is-active > .fitlab-toc__link {
+	background: #eef4ff;
+	border-color: rgba(47, 111, 235, 0.20);
+	box-shadow: 0 12px 30px rgba(47, 111, 235, 0.10);
+}
+
+.fitlab-toc__link.is-active .fitlab-toc__main-title,
+.fitlab-toc__item--chapter.is-active > .fitlab-toc__link .fitlab-toc__main-title {
+	color: #1d4ed8;
+}
+
+.fitlab-toc__link.is-active::before,
+.fitlab-toc__item--chapter.is-active > .fitlab-toc__link::before {
+	content: "";
+	position: absolute;
+	left: -1px;
+	top: 12px;
+	bottom: 12px;
+	width: 3px;
+	border-radius: 999px;
+	background: #2f6feb;
+}
+
+.fitlab-toc__children {
+	position: relative;
+	margin: 7px 0 2px 31px;
+	padding: 2px 0 2px 20px;
+	border-left: 2px solid rgba(148, 163, 184, 0.28);
+}
+
+.fitlab-toc__child {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	width: 100%;
+	min-height: 22px;
+	padding: 2px 0;
+	margin: 2px 0;
+	border: 0;
+	background: transparent;
+	color: #94a3b8;
+	font: inherit;
+	cursor: pointer;
+	text-align: left;
+	border-radius: 10px;
+	transition: color 0.16s ease, transform 0.16s ease;
+}
+
+.fitlab-toc__child::before {
+	content: "";
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	width: 15px;
+	height: 2px;
+	border-radius: 999px;
+	background: rgba(148, 163, 184, 0.38);
+	transform: translateY(-50%);
+}
+
+.fitlab-toc__child-code {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 42px;
+	height: 20px;
+	padding: 0 7px;
+	border-radius: 999px;
+	background: #f8fafc;
+	border: 1px solid rgba(148, 163, 184, 0.18);
+	color: #64748b;
+	font-size: 0.72rem;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.fitlab-toc__child-line {
+	display: block;
+	height: 2px;
+	flex: 1;
+	max-width: 74px;
+	border-radius: 999px;
+	background: linear-gradient(90deg, rgba(148,163,184,0.45), rgba(148,163,184,0.08));
+}
+
+.fitlab-toc__child:hover {
+	color: #1d4ed8;
+	transform: translateX(2px);
+}
+
+.fitlab-toc__child:hover .fitlab-toc__child-code,
+.fitlab-toc__child.is-active .fitlab-toc__child-code {
+	color: #1d4ed8;
+	background: #eef4ff;
+	border-color: rgba(47, 111, 235, 0.22);
+}
+
+.fitlab-toc__child:hover .fitlab-toc__child-line,
+.fitlab-toc__child.is-active .fitlab-toc__child-line {
+	background: linear-gradient(90deg, rgba(47,111,235,0.72), rgba(47,111,235,0.12));
+}
+
+.fitlab-toc__child.is-active::before {
+	background: #2f6feb;
+}
+
+.fitlab-toc__child-title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+.fitlab-toc__item--no-children {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1319px) {
+	.fitlab-toc { width: min(360px, calc(100vw - 36px)); }
+	.fitlab-toc__list { max-height: min(450px, calc(100vh - 260px)); }
+}
+
+@media (max-width: 420px) {
+	.fitlab-toc { width: calc(100vw - 24px); left: 12px; padding: 15px; }
+	.fitlab-toc__main-title { font-size: 0.88rem; }
+	.fitlab-toc__roman { width: 31px; height: 31px; border-radius: 12px; }
+	.fitlab-toc__children { margin-left: 28px; }
+}
+
+
+/* Override style cũ của TOC dạng đầy đủ để bản compact không bị lệch */
+.fitlab-toc__link[data-level="H1"],
+.fitlab-toc__link[data-level="H2"] {
+	display: flex;
+	padding: 11px 12px;
+	margin: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	background: rgba(255,255,255,0.48);
+	border: 1px solid transparent;
+	box-shadow: none;
+	color: #111827;
+}
+
+.fitlab-toc__link[data-level="H1"]::after {
+	display: none;
+}
+
+.fitlab-toc__link[data-level="H1"].is-active,
+.fitlab-toc__link[data-level="H2"].is-active {
+	font-weight: inherit;
+	color: #111827;
+	background: #eef4ff;
+}
+
+</style></head><body>
+<div class="fitlab-progress" aria-hidden="true"><span class="fitlab-progress__bar" id="fitlabProgressBar"></span></div>
+<aside class="fitlab-toc" id="fitlabToc" aria-label="Mục lục bài viết">
+	<div class="fitlab-toc__header">
+		<div class="fitlab-toc__title">Mục lục</div>
+		<div class="fitlab-toc__count" id="fitlabTocCount">0 mục</div>
+	</div>
+	<input class="fitlab-toc__search" id="fitlabTocSearch" type="search" placeholder="Tìm nhanh trong mục lục..." aria-label="Tìm trong mục lục" />
+	<ol class="fitlab-toc__list" id="fitlabTocList"></ol>
+	<div class="fitlab-toc__empty" id="fitlabTocEmpty">Không tìm thấy mục phù hợp.</div>
+</aside>
+<button class="fitlab-mobile-toc-btn" id="fitlabTocToggle" type="button" aria-controls="fitlabToc" aria-expanded="false">☰ Mục lục</button>
+<button class="fitlab-backtop" id="fitlabBackTop" type="button" aria-label="Quay lại đầu trang">↑</button>
+<article id="3453e9fd-bea0-8052-a472-e43884b5b0be" class="article page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/nasa_robert_stewart_spacewalk_2.jpg" style="object-position:center 51.22%"/><h1 class="page-title" dir="auto">Tổng hợp kiến thức giai đoạn 1 – Fit‑Lab Spring 2026</h1><p class="page-description" dir="auto"></p></header>
+<section class="fitlab-keytakeaways" aria-label="Tóm tắt nhanh nội dung bài viết">
+	<p class="fitlab-keytakeaways__title">Tóm tắt nhanh: sau bài này bạn nên nắm được</p>
+	<ul>
+		<li>Bức tranh tổng quan về AI, Machine Learning, Deep Learning và lý do vẫn cần học nền tảng AI dù đã có LLM.</li>
+		<li>Cách chia dữ liệu Train, Validation, Test và tư duy đánh giá mô hình công bằng.</li>
+		<li>Sự khác nhau giữa Loss dùng để tối ưu mô hình và Metric dùng để đánh giá mô hình.</li>
+		<li>Các chỉ số quan trọng trong hồi quy, phân loại và cách đọc Confusion Matrix, Precision, Recall.</li>
+		<li>Quy trình Machine Learning Pipeline từ dữ liệu thô đến huấn luyện, đánh giá và triển khai.</li>
+	</ul>
+</section>
+
+<div class="page-body"><div style="display:contents" dir="auto"><h1 id="3453e9fd-bea0-8077-afe0-f9ab1a448f64" class="">Giới thiệu</h1></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80f5-9b60-d74b866f209e" class="">Giai đoạn 1 của khóa <strong>Fit‑Lab Spring 2026 </strong> do thầy <strong>Nguyễn Hùng Việt</strong> đã đưa học viên từ bức tranh tổng quan về trí tuệ nhân tạo (AI) đến các kỹ thuật xử lý dữ liệu, huấn luyện mô hình Machine Learning và cơ bản về xử lý ngôn ngữ tự nhiên (NLP). Bài viết này sẽ cô đọng lại những mục quan trọng nhất. Mục tiêu là chia sẻ kiến thức và có thể giúp các bạn học chưa tham gia lớp vẫn hiểu được nội dung chính và toàn cảnh.</p></div><div style="display:contents" dir="auto"><h2 id="3453e9fd-bea0-80d1-9edf-c1bbc76a43da" class="">1 Tổng Quan Artificial Intelligence, Machine Learning, Deep Learning</h2></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8075-b37b-d13fa536d30f" class="">1.1 Tại sao vẫn cần học AI khi đã có LLM?</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-806c-aa25-d4663c47068e" class="">Nhiều người nghĩ rằng sự xuất hiện của các mô hình ngôn ngữ lớn (LLM) như ChatGPT khiến việc học AI trở nên dư thừa. Tuy nhiên, thầy có nhấn mạnh ba lý do khiến việc hiểu bản chất AI vẫn rất quan trọng:</p></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-80dc-a898-f2249fed5f12" class="bulleted-list"><li style="list-style-type:disc"><strong>Chi phí vận hành LLM cao</strong>: Mô hình lớn tiêu thụ nhiều tài nguyên cho cả những nhiệm vụ đơn giản, giống như “dao mổ trâu giết gà”.</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-805e-b075-c9d50cb5337f" class="bulleted-list"><li style="list-style-type:disc"><strong>Rủi ro về bảo mật</strong>: Sử dụng API công khai có thể làm lộ dữ liệu nhạy cảm của doanh nghiệp.</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8055-9450-c2f2869e71b4" class="bulleted-list"><li style="list-style-type:disc"><strong>Nhu cầu thực tế thường cụ thể</strong>: Doanh nghiệp thường chỉ cần một mô hình giải quyết một bài toán chuyên biệt (ví dụ phân loại spam, phát hiện gian lận) thay vì mô hình “biết tuốt”. Việc thiết kế mô hình nhỏ gọn tiết kiệm chi phí và tối ưu hiệu năng.</li></ul></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-809b-ac10-e486dacd1082" class="">Và cách tiếp cận học AI cũng có 2 kiểu:</p></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-800b-9d1c-fa6b256087e1" class="bulleted-list"><li style="list-style-type:disc">Học sử dụng công cụ AI để ứng dụng vào công việc, học tập như tạo ảnh, video, voice, học prompt…</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-80de-93cb-d32aeebeb9b3" class="bulleted-list"><li style="list-style-type:disc">Học để hiểu và xây dựng được một model hoàn chỉnh và gốc rễ bản chất đằng sau của AI (Khóa này sẽ thiên về phần này hơn)</li></ul></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8003-9b06-ce4ad69a3339" class="">1.2 Phân biệt <strong>AI</strong>, <strong>ML</strong> và <strong>DL</strong></h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-8023-9e1d-d400666fe2ae" class=""><strong>AI</strong> là khái niệm rộng nhất;</p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80e0-977f-e06d365a8946" class=""><strong>ML</strong> là một nhánh của AI cho phép máy tính học quy luật từ dữ liệu;</p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80e5-9997-e2fb055c8a7c" class=""><strong>DL</strong> là nhánh con của ML dùng mạng nơ‑ron sâu, đòi hỏi nhiều dữ liệu và phần cứng mạnh.</p></div><div style="display:contents" dir="ltr"><table id="3453e9fd-bea0-8014-8687-dff30427807a" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8001-85b3-cd95be3c0e37"><td id="Ddy[" class="">Lớp</td><td id="&gt;[k\" class="">Định nghĩa ngắn gọn</td><td id="dLzz" class="">Vai trò</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8085-8bdb-dfdeeed88911"><td id="Ddy[" class=""><strong>AI</strong></td><td id="&gt;[k\" class="">Máy móc thực hiện công việc cần trí tuệ con người (bao gồm cả hệ thống dựa trên quy tắc)</td><td id="dLzz" class="">Tầm nhìn tổng quát về trí tuệ nhân tạo</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80c0-8c08-e845398b8299"><td id="Ddy[" class=""><strong>ML</strong></td><td id="&gt;[k\" class="">Máy học tìm quy luật từ dữ liệu mà không cần mã hóa tường minh</td><td id="dLzz" class="">Một nhánh của AI, đặt nền móng cho các ứng dụng như dự đoán và phân loại</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80c0-9ec7-e09eeb5bbe1d"><td id="Ddy[" class=""><strong>DL</strong></td><td id="&gt;[k\" class="">Sử dụng mạng nơ‑ron sâu mô phỏng não bộ, cần nhiều dữ liệu và GPU</td><td id="dLzz" class="">Nhánh con của ML, phù hợp với dữ liệu lớn và nhiệm vụ phức tạp như thị giác máy tính</td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-80d0-9d6f-eac35b575b57" class="image"><a href="image_(1).png"><img style="width:703.9973754882812px" src="image_(1).png"/></a></figure></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8091-9294-e88268427f51" class="">1.3 Dữ liệu và ba phương thức học máy</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-804f-b2bb-e28f88cebd0f" class=""><strong>Dữ liệu</strong> được phân thành hai loại chính: dữ liệu có cấu trúc (ví dụ bảng số liệu, CSV) và dữ liệu phi cấu trúc (văn bản, hình ảnh, video, âm thanh). </p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-8094-95da-ccfee1f436d8" class="">Dựa vào loại dữ liệu mà sau này ta có thể lựa chọn thuật toán Machine Learning hay DeepLearning (phần này sẽ ở giai đoạn 2) phù hơp, </p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-8024-bf28-db9a1449513b" class="">Thông thường, dữ liệu có cấu trúc thường phù hợp với các mô hình Machine Learning truyền thống. Trong khi đó, dữ liệu phi cấu trúc thường phức tạp hơn, nên Deep Learning được sử dụng nhiều hơn vì có khả năng học và khai thác tốt các quan hệ tiềm ẩn trong dữ liệu, từ đó giúp cải thiện độ chính xác của mô hình.</p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80e7-b30d-dac0a92aafe2" class="">Tuy nhiên, không phải lúc nào Deep Learning cũng là lựa chọn tốt nhất. Nếu dữ liệu quá ít hoặc bài toán tương đối đơn giản, mô hình Deep Learning rất dễ bị overfitting. Trong những trường hợp như vậy, các phương pháp Machine Learning truyền thống thường phù hợp và hiệu quả hơn.</p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-8004-a3b4-f98d1202aba4" class="">Ba phương thức học máy chính bao gồm:</p></div><div style="display:contents" dir="ltr"><table id="3453e9fd-bea0-80c5-a069-fb9dba0ccf06" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80d6-a60a-c8cbf12070a7"><td id="TOUj" class="">Phương thức</td><td id="Ga:r" class="">Mô tả</td><td id="?r&lt;}" class="">Ví dụ</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8038-b1e9-eab702d9c2b4"><td id="TOUj" class=""><strong>Học có giám sát (Supervised Learning)</strong></td><td id="Ga:r" class="">Sử dụng dữ liệu đã gán nhãn để huấn luyện mô hình. Bao gồm bài toán <strong>hồi quy</strong> (dự đoán giá trị liên tục) và <strong>phân loại</strong> (dự đoán nhãn rời rạc).</td><td id="?r&lt;}" class="">Dự đoán giá nhà (hồi quy) hoặc phân loại email spam/không spam (phân loại).</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-802f-838d-c61e3faa6af5"><td id="TOUj" class=""><strong>Học không giám sát (Unsupervised Learning)</strong></td><td id="Ga:r" class="">Dữ liệu chưa gán nhãn; mô hình tự tìm cấu trúc tiềm ẩn như <strong>phân cụm</strong> hoặc <strong>liên kết</strong>.</td><td id="?r&lt;}" class="">Nhóm khách hàng thành các cụm dựa trên hành vi mua sắm.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-800a-8d25-ea96b273ee42"><td id="TOUj" class=""><strong>Học tăng cường (Reinforcement Learning)</strong></td><td id="Ga:r" class="">Mô hình (agent) tương tác với môi trường, tối đa hóa phần thưởng và giảm phạt.</td><td id="?r&lt;}" class="">Huấn luyện robot chơi game hoặc lái xe tự hành.</td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-8015-aa28-da13f12424ee" class="image"><a href="anh_2.png"><img style="width:703.9973754882812px" src="anh_2.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80d7-bc77-ef071084fcf2" class="">Và trong nội dung bài giảng thì thầy sẽ tập trung chính vào phương thức <strong>Học có giám sát (Supervised Learning)</strong></p></div><div style="display:contents" dir="auto"><h2 id="3453e9fd-bea0-801a-96e1-ed903a0953f7" class="">2. Cách chia dữ liệu và đánh giá mô hình hồi quy</h2></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8098-8d54-d759b0da528c" class="">2.1 Chia dữ liệu: Train, Validation, Test</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-8052-a00d-defcdaeba272" class="">Để đánh giá mô hình một cách công bằng, dữ liệu cần được tách thành ba tập <strong>không trùng lặp</strong>:</p></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8058-925f-db54298f5d81" class="numbered-list" start="1"><li><strong>Training set</strong> – dùng để mô hình học, tương tự bài tập luyện tập hằng ngày.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-804c-a513-c1b761e8ccf0" class="numbered-list" start="2"><li><strong>Validation set</strong> – dùng để theo dõi tiến độ và tinh chỉnh tham số; dữ liệu này <strong>không</strong> cho mô hình học thêm.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8054-8f15-f0ecba350952" class="numbered-list" start="3"><li><strong>Test set</strong> – dùng đánh giá hiệu suất cuối cùng; không được đụng vào cho tới khi hoàn thiện mô hình.</li></ol></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80c0-9b8b-fb66731d453c" class="">Kỹ thuật <strong>K‑Fold Cross Validation</strong> giúp tận dụng dữ liệu hiệu quả: chia tập dữ liệu thành <em>K</em> phần bằng nhau và huấn luyện <em>K</em> lần, mỗi lần lấy một phần làm validation và phần còn lại làm training. Điểm đánh giá cuối cùng là trung bình của các lần chạy, giúp giảm phương sai đánh giá.</p></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-801f-acfe-d2a4f230ea1b" class="image"><a href="a_3.png"><img style="width:703.9973754882812px" src="a_3.png"/></a></figure></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8041-8f53-e5228cd18d98" class="">2.2 Loss function và metrics cho hồi quy</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80da-ab20-c6eae3b9785f" class="">Khi huấn luyện mô hình, ta muốn <strong>giảm hàm mất mát (Loss)</strong>. Hai thước đo phổ biến trong hồi quy là:</p></div><div style="display:contents" dir="ltr"><table id="3453e9fd-bea0-807d-8c30-caa00670e6c4" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80b6-9768-cb14ee916e29"><td id="zeK&gt;" class="">Metric</td><td id="=:IW" class="">Định nghĩa</td><td id="vzMX" class="">Ưu và nhược điểm</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8093-856b-da53ad41016d"><td id="zeK&gt;" class=""><strong>MAE (Mean Absolute Error)</strong></td><td id="=:IW" class="">Trung bình giá trị tuyệt đối của sai số.</td><td id="vzMX" class="">Ít nhạy với outlier; đơn vị sai số giống với biến mục tiêu.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80d9-806a-f0429ca82de8"><td id="zeK&gt;" class=""><strong>MSE (Mean Squared Error)</strong></td><td id="=:IW" class="">Trung bình bình phương sai số.</td><td id="vzMX" class="">Phạt nặng các sai số lớn vì bình phương; chú trọng outlier.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80b1-b473-c2d616f31c21" class="">Ngoài ra bạn có thể tìm đọc thêm về các LOSS khác như Huber và RMSE…</p></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-807e-95c4-d4aa4fa63066" class="image"><a href="a5.png"><img style="width:703.9973754882812px" src="a5.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-8045-af5f-e2f0f101d09a" class="image"><a href="a6.png"><img style="width:703.9973754882812px" src="a6.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-8068-8273-fccfcde42992" class="">Lưu ý rằng giá trị MAE/MSE lớn hay nhỏ còn phụ thuộc vào dải giá trị của biến mục tiêu; ví dụ sai số 5 triệu đồng là nhỏ đối với giá nhà nhưng lớn đối với giá thịt gà. Do đó, khi đọc các số liệu, hãy luôn đặt chúng vào bối cảnh cụ thể.</p></div><div style="display:contents" dir="auto"><h2 id="3453e9fd-bea0-8036-b42f-df77498087af" class="">3. Đánh giá mô hình phân loại</h2></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-80ec-a249-c0e1d11c105c" class="">3.1 Các loại bài toán phân loại</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80e4-99c2-fc6697dd6c01" class="">Các bài toán phân loại bao gồm ba dạng:</p></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8007-a27b-cbc23271ab8f" class="bulleted-list"><li style="list-style-type:disc"><strong>Binary classification</strong>: hai nhãn (ví dụ bệnh/nên điều trị và không bệnh).</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8008-90a5-e60ab3e50db5" class="bulleted-list"><li style="list-style-type:disc"><strong>Multiclass classification</strong>: nhiều hơn hai nhãn, mỗi mẫu thuộc đúng một lớp (ví dụ nhận diện số viết tay từ 0–9).</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8011-9901-c7a324db7260" class="bulleted-list"><li style="list-style-type:disc"><strong>Multilabel classification</strong>: mỗi mẫu có thể thuộc nhiều lớp cùng lúc (ví dụ một bài báo đồng thời thuộc chủ đề “văn hóa” và “chính trị”).</li></ul></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-80ff-b43c-f066aaef363f" class="">3.2 Cách tính Loss của mô hình để tối ưu chúng</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-804f-9060-dda1d6cf3ee2" class="">Mỗi bài toán phân loại sẽ có 1 hàm mất mát (loss function) khác nhau để đánh giá nhưng để tổng quan nhất thì ta sẽ lấy Loss của Multiclass Classification để minh họa</p></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-8010-abbd-c7088aa2f20c" class="image"><a href="a4.png"><img style="width:703.9973754882812px" src="a4.png"/></a></figure></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-808e-83de-cb3ef267a55b" class="">3.3 Metric để đánh giá mô hình với bài toán phân loại và ma trận nhầm lẫn</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-809d-be8c-c48c3ae1ac59" class=""><strong>Tại sao ta không chỉ dùng mỗi Accuracy</strong> (độ chính xác) để đánh giá mô hình? bởi vì Accurary không phản ánh tốt với dữ liệu mất cân bằng. Nếu 98 % bệnh nhân khỏe mạnh và chỉ 2 % ung thư, mô hình luôn dự đoán “khỏe mạnh” sẽ đạt độ chính xác 98 % nhưng chẳng giúp gì.</p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-808e-9d82-d8da8a9a08c3" class="">Để hiểu rõ hơn, ta sử dụng <strong>Ma trận nhầm lẫn (Confusion Matrix)</strong>. Bảng 2×2 dưới đây mô tả các khái niệm:</p></div><div style="display:contents" dir="ltr"><table id="3453e9fd-bea0-8083-a8b2-c33cba504fbc" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-804a-8428-c06a21e19aa7"><td id="XVn|" class="">Dự đoán Thực tế</td><td id="kVkD" class="">Positive</td><td id="D@ry" class="">Negative</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80ae-86b2-ede8862b0147"><td id="XVn|" class=""><strong>Positive</strong></td><td id="kVkD" class=""><strong>TP (True Positive)</strong> – dự đoán đúng Positive</td><td id="D@ry" class=""><strong>FP (False Positive)</strong> – dự đoán Positive khi thực tế Negative</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-800a-b1cd-f343c767404a"><td id="XVn|" class=""><strong>Negative</strong></td><td id="kVkD" class=""><strong>FN (False Negative)</strong> – bỏ sót Positive</td><td id="D@ry" class=""><strong>TN (True Negative)</strong> – dự đoán đúng Negative</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80e3-a2ea-c423d79836a5" class="">Từ ma trận này, hai chỉ số quan trọng được rút ra:</p></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8077-aa35-ca0c62ffe930" class="bulleted-list"><li style="list-style-type:disc"><strong>Precision (Chất lượng)</strong>: tỷ lệ TP trên tổng số dự đoán Positive. Precision cao tức là ít bắt nhầm (quan trọng trong toà án hoặc chẩn đoán sai tù nhân vô tội).</li></ul></div><div style="display:contents" dir="auto"><figure id="3453e9fd-bea0-803c-b0b0-ecc37a486598" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mi>r</mi><mi>e</mi><mi>c</mi><mi>i</mi><mi>s</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">Precision = \frac{TP}{TP + FP}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">rec</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.1297em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">FP</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div></figure></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-80f7-aa69-cab93ba88246" class="bulleted-list"><li style="list-style-type:disc"><strong>Recall (Số lượng)</strong>: tỷ lệ TP trên tổng số Positive thực tế. Recall cao giúp tìm kiếm hết các ca bệnh (chấp nhận một số FP). Không thể tối đa hóa đồng thời cả Precision và Recall, việc chọn ưu tiên tuỳ thuộc bài toán.</li></ul></div><div style="display:contents" dir="auto"><figure id="3453e9fd-bea0-806f-93d7-e8dacb338fb3" class="equation"><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><div class="equation-container"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mi>e</mi><mi>c</mi><mi>a</mi><mi>l</mi><mi>l</mi><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">Recall = \frac{TP}{TP + FN}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">ec</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.1297em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">FN</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">TP</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div></figure></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-8050-a03b-f10dd3751f85" class="image"><a href="a8.png"><img style="width:703.9973754882812px" src="a8.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-802f-92a2-f327fbb1489a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-8075-8de7-cd151fb1249a" class="">Thông thường thì như mình mới học thì rất hay nhầm lẫn giữa Loss và Metric là một nhưng KHÔNG</p></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-804e-ad65-df6e18f57b55" class="">⇒ Trong quá trình training ta dùng Loss để tối ưu mô hình, và <strong>Evaluate</strong> bằng Metric </p></div><div style="display:contents" dir="auto"><h2 id="3453e9fd-bea0-8079-8fa2-f296a7d46818" class="">4. Quy trình Machine Learning Pipeline để xây dựng mô hình</h2></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-802d-8c5e-e1bc790042db" class="">4.1 Các bước chính của ML Pipeline</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80ef-a906-d91c459dd4aa" class="">Một hệ thống học máy đi từ dữ liệu thô tới triển khai qua các bước:</p></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80ba-bbe1-ce8bcbce8e5b" class="numbered-list" start="1"><li><strong>Thu thập và gán nhãn dữ liệu (Data Collection &amp; Annotation)</strong>.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80a5-bb6b-e38fe63a0a9c" class="numbered-list" start="2"><li><strong>Thống kê khám phá dữ liệu (Data Statistic)</strong>.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8013-a4bd-f59c33759785" class="numbered-list" start="3"><li><strong>Tiền xử lý dữ liệu (Preprocessing)</strong> – chuẩn hóa, mã hóa, xử lý thiếu dữ liệu.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-803a-ac71-d4cfcefa86e1" class="numbered-list" start="4"><li><strong>Trực quan hoá (Visualization)</strong> – giúp hiểu mối quan hệ giữa các biến.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80d8-9656-c4e2956343b4" class="numbered-list" start="5"><li><strong>Chọn thuật toán (Choose Algorithm)</strong>.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8003-bb90-d62cfd9a2fc1" class="numbered-list" start="6"><li><strong>Huấn luyện và validation</strong>.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80ed-9e96-eae60c381f9a" class="numbered-list" start="7"><li><strong>Kiểm thử cuối (Testing)</strong>.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80c7-af48-d48a028cb8af" class="numbered-list" start="8"><li><strong>Triển khai (Deployment)</strong>.</li></ol></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-8077-b493-f847efb67a3a" class="image"><a href="a10.png"><img style="width:703.9973754882812px" src="a10.png"/></a></figure></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-80b5-934b-c48315ced4ba" class="">4.2 Vì sao phải tiền xử lý?</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80ec-9125-f552a03f00da" class="">Máy tính chỉ hiểu dữ liệu ở dạng số. Các đặc trưng (feature) có dải giá trị rất khác nhau dễ làm mô hình thiên lệch về những thuộc tính lớn. Tiền xử lý giúp chuẩn hóa dữ liệu để máy tính hiểu và xử lý công bằng các đặc trưng.</p></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8073-a1d3-fa9b48b427c4" class="">4.2.1 Xử lý đặc trưng số (Numeric Features)</h3></div><div style="display:contents" dir="ltr"><table id="3453e9fd-bea0-807d-9486-dadb7fb5a6f0" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80a0-8430-db969c9e48c4"><td id="~Dgs" class="">Kỹ thuật</td><td id="D;nc" class="">Công thức</td><td id="o`a[" class="">Ưu điểm &amp; hạn chế</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8022-975b-d50d54db2ce2"><td id="~Dgs" class=""><strong>Normalization</strong></td><td id="D;nc" class=""><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mi>min</mi><mo>⁡</mo></msub></mrow><mrow><msub><mi>x</mi><mi>max</mi><mo>⁡</mo></msub><mo>−</mo><msub><mi>x</mi><mi>min</mi><mo>⁡</mo></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">x&#x27; = \frac{x - x_{\min}}{x_{\max} - x_{\min}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7519em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2635em;vertical-align:-0.4451em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8184em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mtight">m</span><span class="mtight">a</span><span class="mtight">x</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.334em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mtight">m</span><span class="mtight">i</span><span class="mtight">n</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4101em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mbin mtight">−</span><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.334em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mtight">m</span><span class="mtight">i</span><span class="mtight">n</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4451em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span>﻿</span></span></td><td id="o`a[" class="">Đưa giá trị về [0, 1]; nhạy cảm với outlier.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80c8-89be-cd222b9a3605"><td id="~Dgs" class=""><strong>Standardization</strong></td><td id="D;nc" class=""><style>@import url('https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex-swap.min.css')
+
+/* =========================================================
+   FITLAB TOC CHILD TITLE MODE
+   - Bỏ số 1.1 / 1.2 / 3.3 ở mục nhỏ
+   - Hiển thị tiêu đề mục nhỏ theo dạng nhánh gọn, dễ đọc
+   ========================================================= */
+.fitlab-toc__children {
+	margin: 8px 0 3px 33px;
+	padding: 4px 0 4px 18px;
+	border-left: 2px solid rgba(148, 163, 184, 0.26);
+}
+
+.fitlab-toc__child {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	min-height: 0;
+	padding: 7px 10px 7px 0;
+	margin: 1px 0;
+	border-radius: 12px;
+	background: transparent;
+	color: #64748b;
+	text-align: left;
+	transition: color 0.16s ease, transform 0.16s ease, background 0.16s ease;
+}
+
+.fitlab-toc__child::before {
+	content: "";
+	position: absolute;
+	left: -18px;
+	top: 17px;
+	width: 12px;
+	height: 2px;
+	border-radius: 999px;
+	background: rgba(148, 163, 184, 0.45);
+	transform: none;
+}
+
+.fitlab-toc__child::after {
+	content: "";
+	position: absolute;
+	left: -7px;
+	top: 14px;
+	width: 6px;
+	height: 6px;
+	border-radius: 999px;
+	background: #cbd5e1;
+	box-shadow: 0 0 0 3px rgba(248, 250, 252, 0.95);
+}
+
+.fitlab-toc__child-code,
+.fitlab-toc__child-line {
+	display: none !important;
+}
+
+.fitlab-toc__child-title {
+	position: static !important;
+	width: auto !important;
+	height: auto !important;
+	overflow: visible !important;
+	clip: auto !important;
+	white-space: normal !important;
+	display: block;
+	font-size: 0.80rem;
+	font-weight: 650;
+	line-height: 1.42;
+	letter-spacing: -0.005em;
+	color: #64748b;
+}
+
+.fitlab-toc__child:hover {
+	background: rgba(47, 111, 235, 0.055);
+	color: #1d4ed8;
+	transform: translateX(2px);
+}
+
+.fitlab-toc__child:hover::before,
+.fitlab-toc__child.is-active::before {
+	background: #2f6feb;
+}
+
+.fitlab-toc__child:hover::after,
+.fitlab-toc__child.is-active::after {
+	background: #2f6feb;
+	box-shadow: 0 0 0 4px rgba(47, 111, 235, 0.12);
+}
+
+.fitlab-toc__child:hover .fitlab-toc__child-title,
+.fitlab-toc__child.is-active .fitlab-toc__child-title {
+	color: #1d4ed8;
+	font-weight: 800;
+}
+
+.fitlab-toc__child.is-active {
+	background: rgba(47, 111, 235, 0.075);
+}
+
+@media (max-width: 420px) {
+	.fitlab-toc__children {
+		margin-left: 29px;
+		padding-left: 16px;
+	}
+	.fitlab-toc__child-title {
+		font-size: 0.78rem;
+	}
+}
+</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac></mrow><annotation encoding="application/x-tex">x&#x27; = \frac{x - \mu}{\sigma}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7519em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1994em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8544em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">σ</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4461em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">μ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span>﻿</span></span></td><td id="o`a[" class="">Kết quả thường nằm trong khoảng [-3, 3]; bền vững hơn với outlier.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8048-be36-db1554ddbfb4" class="">4.2.2 Xử lý đặc trưng dạng chữ phân loại(Categorical Features)</h3></div><div style="display:contents" dir="ltr"><table id="3453e9fd-bea0-8093-91ad-c884a247084f" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-807d-a2a1-d536e48c1a7f"><td id=";d^m" class="">Phương pháp</td><td id="o?:B" class="">Khi sử dụng</td><td id="jzU^" class="">Ưu &amp; Nhược điểm</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80e7-9761-e5f2e793c7d9"><td id=";d^m" class=""><strong>Ordinal Encoding</strong></td><td id="o?:B" class="">Dữ liệu có thứ bậc (ví dụ kích cỡ áo XS &lt; S &lt; M &lt; L) dùng cho ordinal features</td><td id="jzU^" class="">Giữ thứ bậc nhưng dễ gây nhầm lẫn nếu dùng sai.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-805c-a1ad-def2e16360c2"><td id=";d^m" class=""><strong>One‑Hot Encoding</strong></td><td id="o?:B" class="">Dữ liệu danh mục không có thứ bậc (màu sắc, quốc gia) dùng cho norminal features</td><td id="jzU^" class="">Biến mỗi giá trị thành vector nhị phân; tốn bộ nhớ nếu số giá trị lớn.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8014-995e-e1ba29c02054"><td id=";d^m" class=""><strong>Word Embedding</strong></td><td id="o?:B" class="">Đối với văn bản; biểu diễn từ thành vector nhiều chiều</td><td id="jzU^" class="">Giữ được quan hệ ngữ nghĩa (cosine gần nhau khi nghĩa tương tự); chia thành embedding tĩnh (Word2Vec) và động (Transformer).</td></tr></div></tbody></table></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-8034-b689-edb2a5344920" class="image"><a href="13.png"><img style="width:703.9973754882812px" src="13.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-80a4-a559-c2c6e763c6d2" class="image"><a href="12.png"><img style="width:703.9973754882812px" src="12.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="3453e9fd-bea0-80aa-a043-de6ba5c5223a" class="image"><a href="11.png"><img style="width:703.9973754882812px" src="11.png"/></a></figure></div><div style="display:contents" dir="auto"><h2 id="3453e9fd-bea0-804f-b5c7-d8f6371a57dd" class="">5. Thuật toán ML cơ bản và xử lý dữ liệu</h2></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8004-a8f5-ffb65943edee" class="">5.1 Mối tương quan và đa cộng tuyến</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-807e-b6b9-d0a005de816f" class="">Hệ số tương quan mô tả quan hệ tuyến tính giữa hai biến, chạy từ −1 đến 1. Đối với học máy:</p></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-80da-a681-cd9d4bcc53a9" class="bulleted-list"><li style="list-style-type:disc"><strong>Tốt</strong>: Feature có tương quan mạnh với biến mục tiêu (|r| &gt; 0.7) phù hợp với mô hình tuyến tính vì nhẹ, dễ giải thích dạng linear. </li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8084-87df-fb50577289d5" class="bulleted-list"><li style="list-style-type:disc"><strong>Xấu (đa cộng tuyến)</strong>: Hai feature tương quan mạnh với nhau dẫn đến thừa thông tin và khó đánh giá tầm quan trọng. Các kỹ thuật loại bỏ bớt feature hoặc dùng mô hình regularization sẽ hữu ích.</li></ul></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-80a6-a1a4-c53493b47166" class="">5.2 Xử lý dữ liệu mất cân bằng</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-8083-8e4b-c4474b872369" class="">Khi một lớp chiếm đa số, mô hình dễ bỏ qua lớp hiếm. Hai chiến lược xử lý trên <strong>tập huấn luyện</strong> trước khi chia data thành bộ Train/Val/ Test vì nếu chia xong rồi mới áp dụng phương pháp thì sẽ dễ bị tình trạng Duplicate Data (1 data nằm cả ở 2 bộ dữ liệu)</p></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8041-aec4-f872261c9d50" class="numbered-list" start="1"><li><strong>Under‑sampling</strong>: Giảm bớt mẫu từ lớp đa số.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8039-beaa-d23536120501" class="numbered-list" start="2"><li><strong>Over‑sampling</strong>: Nhân bản hoặc tổng hợp thêm dữ liệu cho lớp thiểu số (ví dụ dùng kỹ thuật SMOTE). Thường là 1 Data Scientist thì ta sẽ ưu tiên cách này hơn vì chúng data như của quý, không nên lãng phí</li></ol></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8024-a651-f9c83c6bea66" class="">5.3 Thuật toán cơ bản</h3></div><div style="display:contents" dir="ltr"><table id="3453e9fd-bea0-80d2-acc0-de6d1e1ccf99" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8000-ab9b-c103894f1d37"><td id="C?WO" class="">Thuật toán</td><td id="To[N" class="">Loại bài toán</td><td id="jzLO" class="">Đặc điểm</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8092-a0bf-e872a2134433"><td id="C?WO" class=""><strong>Linear Regression</strong></td><td id="To[N" class="">Hồi quy</td><td id="jzLO" class="">Tìm đường thẳng (siêu phẳng) gần các điểm dữ liệu nhất; dễ hiểu nhưng nhạy cảm với outlier.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-801d-afd2-cab0d590894c"><td id="C?WO" class=""><strong>Logistic Regression</strong></td><td id="To[N" class="">Phân loại</td><td id="jzLO" class="">Dùng hàm sigmoid (hoặc softmax với multiclass) để chuyển đầu ra tuyến tính thành xác suất 0–1; dù mang tên “Regression” nhưng dùng cho phân loại.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8052-9ea2-cc6cb1eab8d4"><td id="C?WO" class=""><strong>Decision Tree</strong></td><td id="To[N" class="">Hồi quy hoặc phân loại</td><td id="jzLO" class="">Chia dữ liệu theo các ngưỡng trên feature để tăng “độ thuần khiết”; dễ hiểu nhưng dễ overfit.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-800a-81e6-c4b781a917ce" class="">5.4 Ensemble Learning</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80c5-af4f-eac13f9def5b" class="">Thay vì dùng một mô hình đơn lẻ, <strong>ensemble</strong> kết hợp nhiều mô hình để cải thiện hiệu suất:</p></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-80c6-ae2b-ef9319af104c" class="bulleted-list"><li style="list-style-type:disc"><strong>Bagging (Random Forest)</strong>: Huấn luyện song song nhiều cây quyết định trên các tập dữ liệu bootstrap; kết quả lấy trung bình (hồi quy) hoặc đa số (phân loại).<div style="display:contents" dir="ltr"><figure id="3463e9fd-bea0-8055-bf0c-c245c06e9f45" class="image"><a href="14.png"><img style="width:666.0416259765625px" src="14.png"/></a></figure></div></li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8073-b055-c382b597b0bc" class="bulleted-list"><li style="list-style-type:disc"><strong>Boosting</strong>: Mô hình học nối tiếp nhau, mỗi mô hình mới chú trọng sửa lỗi của mô hình trước. Phương pháp này thường cho kết quả tốt nhưng có nguy cơ overfit nếu không điều chỉnh hợp lý. Ví dụ như XGboost, LightBoost, Gradient Boosting, AdaBoost<div style="display:contents" dir="ltr"><figure id="3463e9fd-bea0-806c-a81e-dffb95a7c221" class="image"><a href="15.png"><img style="width:666.0416259765625px" src="15.png"/></a></figure></div></li></ul></div><div style="display:contents" dir="auto"><h2 id="3453e9fd-bea0-809f-8a99-ee8ea8c1019d" class="">6 Thực hành với Pandas và Scikit‑Learn</h2></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80cb-b532-e02ab9a698d7" class="">Buổi thực hành hands-on:</p></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80ce-8df7-fb746f6cf022" class="numbered-list" start="1"><li><strong>Đọc dữ liệu và mô tả</strong>: Sử dụng read_csv() để nạp file CSV và dùng thư viện ydata‑profiling tạo báo cáo HTML với histogram, bảng thiếu dữ liệu và ma trận tương quan.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80ab-b357-f52b75498ebe" class="numbered-list" start="2"><li><strong>Tách biến</strong>: Phân tách X (features) và Y (target) bằng drop(axis=1), sau đó dùng train_test_split để chia thành tập Train và Test; luôn đặt random_state để tái lập kết quả.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80ec-8543-e631e23e66b5" class="numbered-list" start="3"><li><strong>Tiền xử lý</strong>: Dùng MinMaxScaler hoặc StandardScaler cho dữ liệu số và OrdinalEncoder hoặc OneHotEncoder cho dữ liệu phân loại. Kết hợp tất cả bằng ColumnTransformer, một cấu trúc cho phép áp dụng nhiều pipeline song song. Nguyên tắc vàng là chỉ <strong>fit_transform</strong> trên tập Train và <strong>transform</strong> trên tập Test.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-801c-a7d8-e4c079b16833" class="numbered-list" start="4"><li><strong>Huấn luyện và đánh giá</strong>: Khởi tạo mô hình (ví dụ LinearRegression()) → huấn luyện bằng fit(X_train, y_train) → dự đoán với model.predict(X_test). Các metric như MAE, MSE, R2 score, confusion_matrix… được lấy từ sklearn.metrics. Đối với phân loại, có thể dùng predict_proba() để điều chỉnh ngưỡng phân loại thay vì mặc định 0.5.</li></ol></div><div style="display:contents" dir="auto"><h2 id="3453e9fd-bea0-8026-9aba-e733a5f3a75b" class="">7. Xử lý Ngôn ngữ Tự nhiên (NLP) cơ bản</h2></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8058-9ed8-f1ad218a111b" class="">7.1 Giới hạn của ML truyền thống</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80e9-ae8a-fb7cbebb74e4" class="">NLP nằm ở giao thoa giữa khoa học máy tính, ngôn ngữ học và AI. Các thuật toán ML truyền thống giả định các đặc trưng độc lập, không mang thông tin về vị trí hay ngữ cảnh – điều này mâu thuẫn với bản chất tuần tự và ngữ cảnh của ngôn ngữ.</p></div><div style="display:contents" dir="ltr"><figure id="3463e9fd-bea0-80dc-a124-f07f623d5305" class="image"><a href="16.png"><img style="width:703.9973754882812px" src="16.png"/></a></figure></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-8031-ba35-cc223fdf32d6" class="">7.2 Quy trình tiền xử lý văn bản</h3></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-80fb-99e7-efc9bcd13e0e" class="">Để đưa văn bản vào mô hình học máy, cần thực hiện các bước sau:</p></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8017-908f-e8d59ade9781" class="numbered-list" start="1"><li><strong>Loại bỏ dấu câu (punctuations)</strong>.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8081-8d23-c7cb514be02d" class="numbered-list" start="2"><li><strong>Chuyển về chữ thường</strong>.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-80d8-b9ce-f83f42d996f6" class="numbered-list" start="3"><li><strong>Tokenization (tách từ hoặc câu)</strong> – tiếng Việt cần công cụ đặc thù như underthesea.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8062-8015-dfe2515aa01c" class="numbered-list" start="4"><li><strong>Loại bỏ stopwords</strong> – từ phổ biến nhưng ít đóng góp ngữ nghĩa (a, an, the, là, bị…)</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="3453e9fd-bea0-8012-9eb5-f86ed381c53c" class="numbered-list" start="5"><li><strong>Stemming/Lemmatization</strong> – đưa từ về gốc; tiếng Việt ít cần bước này, còn tiếng Anh thì bắt buộc.</li></ol></div><div style="display:contents" dir="ltr"><figure id="3463e9fd-bea0-8049-a24e-ed12094265f0" class="image"><a href="17.png"><img style="width:703.9973754882812px" src="17.png"/></a></figure></div><div style="display:contents" dir="auto"><h3 id="3453e9fd-bea0-80b2-a410-c2bffab58264" class="">7.3 Các phương pháp biểu diễn văn bản </h3></div><div style="display:contents" dir="ltr"><table id="3453e9fd-bea0-8037-a759-dc1e480ba9a7" class="simple-table"><tbody><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-800b-876c-c28d556a51dc"><td id="&lt;sjI" class="">Phương pháp</td><td id="CFCq" class="">Nguyên lý</td><td id="ZDPm" class="">Ưu &amp; nhược điểm</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-80d6-b0b3-d6443dc6d760"><td id="&lt;sjI" class=""><strong>Bag‑of‑Words (BoW)</strong></td><td id="CFCq" class="">Đếm số lần xuất hiện của mỗi từ trong tài liệu.</td><td id="ZDPm" class="">Dễ triển khai nhưng mất hoàn toàn thứ tự và ngữ cảnh.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-805f-b314-e734216133c8"><td id="&lt;sjI" class=""><strong>N‑grams</strong></td><td id="CFCq" class="">Tách chuỗi thành n từ liên tiếp (bi‑gram, tri‑gram…).</td><td id="ZDPm" class="">Bảo toàn một phần thứ tự nhưng làm từ điển phình to, tăng tính toán.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3453e9fd-bea0-8036-a152-cc9f415325a7"><td id="&lt;sjI" class=""><strong>TF‑IDF</strong></td><td id="CFCq" class="">Nhân tần suất từ (TF) với độ hiếm của từ trong tập tài liệu (IDF) để gán trọng số.</td><td id="ZDPm" class="">Phản ánh tầm quan trọng của từ ở một tài liệu cụ thể nhưng vẫn bỏ qua ngữ cảnh liên tục.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><h2 id="3453e9fd-bea0-8053-8cd3-c44d96daf97c" class="">8 Kết luận </h2></div><div style="display:contents" dir="auto"><p id="3453e9fd-bea0-808f-9547-c7047cf1812d" class="">Giai đoạn 1 của khóa <strong>Fit‑Lab Spring 2026 </strong> do thầy <strong>Nguyễn Hùng Việt </strong>đã cho ta một cái nhìn tổng quan rõ ràng cho người mới bắt đầu trong lĩnh vực AI/ML và đây cũng là nền tảng để học tiếp sang phần DeepLearning ở giai đoạn sau</p></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8083-b79d-c93f8953238a" class="bulleted-list"><li style="list-style-type:disc">Hiểu lý do cần học AI: mô hình lớn không thay thế được mô hình chuyên biệt và sự hiểu biết nền tảng giúp bạn phát triển giải pháp tối ưu.</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-80cf-8c14-d36a6c845453" class="bulleted-list"><li style="list-style-type:disc">Nắm chắc các khái niệm cơ bản – AI, ML, DL, các loại dữ liệu và ba phương thức học máy.</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8095-b98f-e8f424f336ed" class="bulleted-list"><li style="list-style-type:disc">Tuân thủ quy trình ML pipeline: chia dữ liệu đúng cách, chọn thuật toán phù hợp và tối ưu Loss của mô hình, đánh giá bằng metric thích hợp.</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-8031-bb48-eff69fe2538a" class="bulleted-list"><li style="list-style-type:disc">Biết ưu nhược điểm của các thuật toán và xử lý dữ liệu trước khi huấn luyện.</li></ul></div><div style="display:contents" dir="auto"><ul id="3453e9fd-bea0-80b4-8cb4-d4536a89a188" class="bulleted-list"><li style="list-style-type:disc">Hands-on với các thư viện của Machine Learning như Scikit‑Learn để biến kiến thức thành kỹ năng và chuẩn bị cho giai đoạn tiếp theo: Deep Learning.</li></ul></div><div style="display:contents" dir="auto"><h2 id="3463e9fd-bea0-80fa-bc91-e5a231c95447" class="">9. Tài liệu tham khảo</h2></div><div style="display:contents" dir="auto"><p id="3463e9fd-bea0-80ee-b69a-d828f663254c" class=""><a href="https://www.youtube.com/watch?v=_syesGdA_Og&amp;t=3196s">[1] </a><strong><a href="https://www.youtube.com/watch?v=_syesGdA_Og&amp;t=3196s">Khai giảng lớp FIT-LAB Spring 2026 về AI, ML, DL, CV, NLP và LLM tại NEU</a></strong></p></div><div style="display:contents" dir="auto"><p id="3463e9fd-bea0-80ee-a6bd-d7b16419c48e" class=""><a href="https://www.youtube.com/watch?v=d2laasDMk6c">[2] </a><strong><a href="https://www.youtube.com/watch?v=d2laasDMk6c">[English speaking lesson] Buổi 2 lớp FIT-LAB Spring 2026 về AI, ML, DL, CV, NLP và LLM tại NEU</a></strong></p></div><div style="display:contents" dir="auto"><p id="3463e9fd-bea0-80e0-a129-e08b93680e2a" class=""><a href="https://www.youtube.com/watch?v=fSkXZORO6vU&amp;t=4297s">[3] </a><strong><a href="https://www.youtube.com/watch?v=fSkXZORO6vU&amp;t=4297s">[Song ngữ Việt-Anh] Buổi 3 lớp FIT-LAB Spring 2026 về AI, ML, DL, CV, NLP và LLM tại NEU</a></strong></p></div><div style="display:contents" dir="auto"><p id="3463e9fd-bea0-80c5-b498-c8fb6b608cf8" class=""><a href="https://www.youtube.com/watch?v=1w2veOV6MiY&amp;t=6692s">[4] </a><strong><a href="https://www.youtube.com/watch?v=1w2veOV6MiY&amp;t=6692s">Buổi 4 lớp FIT-LAB Spring 2026: Machine Learning pipeline</a></strong></p></div><div style="display:contents" dir="auto"><p id="3463e9fd-bea0-8098-8736-ceed75bf40b9" class=""><a href="https://www.youtube.com/watch?v=ntjL8RdAIjI&amp;t=7722s">[5] </a><strong><a href="https://www.youtube.com/watch?v=ntjL8RdAIjI&amp;t=7722s">Các thuật toán Machine Learning (Buổi 5 lớp FIT-LAB Spring 2026)</a></strong></p></div><div style="display:contents" dir="auto"><p id="3463e9fd-bea0-808e-a9f5-d92529ade333" class=""><a href="https://www.youtube.com/watch?v=frrAfvVHg_E&amp;t=5440s">[6] </a><strong><a href="https://www.youtube.com/watch?v=frrAfvVHg_E&amp;t=5440s">[FIT-LAB Spring 2026] Thực hành huấn luyện mô hình Machine Learning (Buổi 6)</a></strong></p></div><div style="display:contents" dir="auto"><p id="3463e9fd-bea0-8038-a715-dfa3d9bb023c" class=""><a href="https://www.youtube.com/watch?v=dtKcmYQ_9OI&amp;t=4820s">[7] </a><strong><a href="https://www.youtube.com/watch?v=dtKcmYQ_9OI&amp;t=4820s">[FIT-LAB Spring 2026] Tìm hiểu về NLP (Buổi 7)</a></strong></p></div><div style="display:contents" dir="auto"><p id="3463e9fd-bea0-8086-bc4f-fdadd150c0c0" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span><script>
+(function () {
+	const $ = (selector, root = document) => root.querySelector(selector);
+	const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+
+	const progressBar = $('#fitlabProgressBar');
+	const backTop = $('#fitlabBackTop');
+	const toc = $('#fitlabToc');
+	const tocToggle = $('#fitlabTocToggle');
+	const tocList = $('#fitlabTocList');
+	const tocCount = $('#fitlabTocCount');
+	const tocSearch = $('#fitlabTocSearch');
+	const tocEmpty = $('#fitlabTocEmpty');
+	const article = $('article.page') || document.body;
+
+	function slugify(text, index) {
+		return 'fitlab-section-' + index + '-' + text
+			.toLowerCase()
+			.normalize('NFD')
+			.replace(/[\u0300-\u036f]/g, '')
+			.replace(/đ/g, 'd')
+			.replace(/[^a-z0-9]+/g, '-')
+			.replace(/^-+|-+$/g, '')
+			.slice(0, 70);
+	}
+
+	function romanize(num) {
+		const map = [
+			[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+			[100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+			[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+		];
+		let result = '';
+		for (const [value, symbol] of map) {
+			while (num >= value) {
+				result += symbol;
+				num -= value;
+			}
+		}
+		return result;
+	}
+
+	function cleanMainTitle(text) {
+		return text
+			.replace(/\s+/g, ' ')
+			.trim()
+			.replace(/^\d+(?:\.\d+)*\.?\s*/u, '')
+			.replace(/^\s*[–—-]\s*/u, '')
+			.trim();
+	}
+
+	function childCode(text, fallbackIndex) {
+		const compact = text.replace(/\s+/g, ' ').trim();
+		const match = compact.match(/^(\d+(?:\.\d+)+)/);
+		return match ? match[1] : 'mục ' + fallbackIndex;
+	}
+
+	function updateProgress() {
+		const scrollTop = window.scrollY || document.documentElement.scrollTop;
+		const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+		const percent = scrollHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / scrollHeight) * 100)) : 0;
+		if (progressBar) progressBar.style.width = percent + '%';
+		if (backTop) backTop.classList.toggle('is-visible', scrollTop > 650);
+	}
+
+	function closeTocOnMobile() {
+		if (window.innerWidth < 1320 && toc) {
+			toc.classList.remove('is-open');
+			if (tocToggle) tocToggle.setAttribute('aria-expanded', 'false');
+		}
+	}
+
+	function scrollToHeading(heading) {
+		if (!heading) return;
+		heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		history.replaceState(null, '', '#' + heading.id);
+		closeTocOnMobile();
+	}
+
+	function collectChapterGroups() {
+		const allHeadings = $$('h1, h2, h3', article)
+			.filter(h => !h.closest('.fitlab-keytakeaways'))
+			.filter(h => !h.classList.contains('page-title'));
+
+		allHeadings.forEach((heading, index) => {
+			if (!heading.id) heading.id = slugify(heading.textContent.trim(), index + 1);
+		});
+
+		const groups = [];
+		let currentGroup = null;
+
+		allHeadings.forEach((heading) => {
+			if (heading.tagName === 'H1' || heading.tagName === 'H2') {
+				currentGroup = {
+					heading,
+					children: [],
+					searchText: heading.textContent.trim().toLowerCase()
+				};
+				groups.push(currentGroup);
+			} else if (heading.tagName === 'H3' && currentGroup) {
+				currentGroup.children.push(heading);
+				currentGroup.searchText += ' ' + heading.textContent.trim().toLowerCase();
+			}
+		});
+
+		return { groups, allHeadings };
+	}
+
+	function buildToc() {
+		if (!tocList) return;
+
+		const { groups, allHeadings } = collectChapterGroups();
+
+		if (!groups.length) {
+			if (toc) toc.style.display = 'none';
+			if (tocToggle) tocToggle.style.display = 'none';
+			return;
+		}
+
+		tocList.innerHTML = '';
+
+		const headingToGroupId = new Map();
+		const headingToChildId = new Map();
+
+		groups.forEach((group, groupIndex) => {
+			const li = document.createElement('li');
+			li.className = 'fitlab-toc__item fitlab-toc__item--chapter';
+			if (!group.children.length) li.classList.add('fitlab-toc__item--no-children');
+			li.dataset.groupTarget = group.heading.id;
+			li.dataset.searchText = group.searchText;
+
+			const a = document.createElement('a');
+			a.className = 'fitlab-toc__link';
+			a.href = '#' + group.heading.id;
+			a.dataset.level = group.heading.tagName;
+
+			const roman = document.createElement('span');
+			roman.className = 'fitlab-toc__roman';
+			roman.textContent = romanize(groupIndex + 1);
+
+			const main = document.createElement('span');
+			main.className = 'fitlab-toc__main';
+
+			const title = document.createElement('span');
+			title.className = 'fitlab-toc__main-title';
+			title.textContent = cleanMainTitle(group.heading.textContent);
+
+			const meta = document.createElement('span');
+			meta.className = 'fitlab-toc__main-meta';
+			meta.textContent = group.children.length
+				? group.children.length + ' mục nhỏ'
+				: 'mục chính';
+
+			main.appendChild(title);
+			main.appendChild(meta);
+			a.appendChild(roman);
+			a.appendChild(main);
+
+			a.addEventListener('click', function (event) {
+				event.preventDefault();
+				scrollToHeading(group.heading);
+			});
+
+			li.appendChild(a);
+			headingToGroupId.set(group.heading.id, group.heading.id);
+
+			if (group.children.length) {
+				const childWrap = document.createElement('div');
+				childWrap.className = 'fitlab-toc__children';
+
+				group.children.forEach((child, childIndex) => {
+					const button = document.createElement('button');
+					button.className = 'fitlab-toc__child';
+					button.type = 'button';
+					button.dataset.target = child.id;
+					button.title = child.textContent.trim().replace(/\s+/g, ' ');
+
+					const code = document.createElement('span');
+					code.className = 'fitlab-toc__child-code';
+					code.textContent = childCode(child.textContent, childIndex + 1);
+
+					const line = document.createElement('span');
+					line.className = 'fitlab-toc__child-line';
+					line.setAttribute('aria-hidden', 'true');
+
+					const hiddenTitle = document.createElement('span');
+					hiddenTitle.className = 'fitlab-toc__child-title';
+					hiddenTitle.textContent = cleanMainTitle(child.textContent);
+
+					button.appendChild(code);
+					button.appendChild(line);
+					button.appendChild(hiddenTitle);
+					button.addEventListener('click', function () {
+						scrollToHeading(child);
+					});
+
+					childWrap.appendChild(button);
+					headingToGroupId.set(child.id, group.heading.id);
+					headingToChildId.set(child.id, child.id);
+				});
+
+				li.appendChild(childWrap);
+			}
+
+			tocList.appendChild(li);
+		});
+
+		if (tocCount) tocCount.textContent = groups.length + ' mục lớn';
+
+		const chapterItems = $$('.fitlab-toc__item--chapter', tocList);
+		const childButtons = $$('.fitlab-toc__child', tocList);
+
+		function setActive(activeHeadingId) {
+			const activeGroupId = headingToGroupId.get(activeHeadingId) || activeHeadingId;
+			const activeChildId = headingToChildId.get(activeHeadingId);
+
+			chapterItems.forEach(item => {
+				const isActive = item.dataset.groupTarget === activeGroupId;
+				item.classList.toggle('is-active', isActive);
+				const link = $('.fitlab-toc__link', item);
+				if (link) link.classList.toggle('is-active', isActive);
+			});
+
+			childButtons.forEach(button => {
+				button.classList.toggle('is-active', button.dataset.target === activeChildId);
+			});
+
+			const activeItem = $('.fitlab-toc__item--chapter.is-active', tocList);
+			if (activeItem) activeItem.scrollIntoView({ block: 'nearest' });
+		}
+
+		const observer = new IntersectionObserver((entries) => {
+			const visible = entries
+				.filter(entry => entry.isIntersecting)
+				.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+			if (visible[0]) setActive(visible[0].target.id);
+		}, { rootMargin: '-18% 0px -70% 0px', threshold: [0, 1] });
+
+		allHeadings.forEach(h => observer.observe(h));
+		setActive(groups[0].heading.id);
+
+		if (tocSearch) {
+			tocSearch.addEventListener('input', function () {
+				const keyword = tocSearch.value.trim().toLowerCase();
+				let visibleCount = 0;
+
+				chapterItems.forEach(item => {
+					const match = !keyword || item.dataset.searchText.includes(keyword);
+					item.style.display = match ? '' : 'none';
+					if (match) visibleCount++;
+				});
+
+				if (tocEmpty) tocEmpty.style.display = visibleCount ? 'none' : 'block';
+			});
+		}
+	}
+
+	if (tocToggle && toc) {
+		tocToggle.addEventListener('click', function () {
+			const isOpen = toc.classList.toggle('is-open');
+			tocToggle.setAttribute('aria-expanded', String(isOpen));
+		});
+	}
+
+	if (backTop) {
+		backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+	}
+
+	document.addEventListener('keydown', event => {
+		if (event.key === 'Escape') closeTocOnMobile();
+	});
+
+	window.addEventListener('scroll', updateProgress, { passive: true });
+	window.addEventListener('resize', updateProgress);
+
+	buildToc();
+	updateProgress();
+})();
+</script>
+
+</body></html>
